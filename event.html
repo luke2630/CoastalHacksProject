@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="calendar.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wellness Calender</title>
+	<link rel="shortcut icon" type="image/jpg" href="favicon.jpg"/>
+  <link rel="stylesheet" href="calendar.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/6f73ea2512.js" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body class="add-event">
+	<nav class="navbar">
+    <div class="nav-title"><a href="index.html">Wellness Calendar</a></div>
+    <div class="nav-links">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="break.html">Break Activities</a></li>
+        <li><a href="event.html">Add Event</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="add-event-container">
+    <div class="box" id="animate">
+      <div class="title">
+        <h1>Add Event</h1>
+      </div>
+
+      <div class="text-box">
+			
+			<!--CHANGE return addEventTYPE() TO ANOTHER FUNCTION-->
+			<form onsubmit="return addDate()">
+        <p class="question">Event Date:</p>
+        <input class="formquestion" type="date" id="dateIn">
+				<!--space between input box and enter button-->
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input class="form" type="submit" value="Enter">
+      </form>
+      <form onsubmit="return addEventType()">
+        <br><p class="question">Event Type:</p>
+        <input class="formquestion" type="text" id="eventIn">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input class="form" type="submit" value="Enter">
+      </form>
+      <form onsubmit="return addBeginTime()">
+        <br><p class="question">Start Time:</p>
+        <input class="formquestion" type="time" id="beginIn">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input class="form" type="submit" value="Enter">
+      </form>
+      <form onsubmit="addEndTime()">
+        <br><p class="question">End Time:</p>
+        <input class="formquestion" type="time" id="endIn">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input class="form" type="submit" value="Finish">
+      </form>
+
+				<!--
+          <form method="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdKsTkCZjRD5onxV90y-mrDQ_zVETMjK__r0rOUsv0-OEoJFA/formResponse" target="_blank">
+         
+
+          <label for="fname">Event Name:</label><br>
+          <input id = "eventName" class="formquestion" type="text" name="entry.1793934466" required><br><br>
+
+          <label for="lname">Name (First, Last):</label><br>
+          <input id = "userName" class="formquestion" type="text" name="entry.1111197891" required><br><br>
+
+					<label for="lname">Event Date:</label><br>
+          <input id = "date" class="formquestion" type="date" name="entry.1111197891" required><br><br>
+
+          <label for="lname">Start Time:</label><br>
+          <input id = "startTime" class="formquestion time" type="time" name="entry.611044203" required><br><br>
+
+          <label for="lname">End Time:</label><br>
+          <input id = "endTime" class="formquestion time" type="time" name="entry.611044203" required><br><br>
+          
+          <input class="form" type="submit" required></input>
+          
+        </form>
+				-->
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wellness Calender</title>
+	<link rel="shortcut icon" type="image/jpg" href="favicon.jpg"/>
+  <link rel="stylesheet" href="calendar.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/6f73ea2512.js" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body class="home">
+  <nav class="navbar">
+    <div class="nav-title"><a href="index.html">Wellness Calendar</a></div>
+    <div class="nav-links">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="break.html">Break Activities</a></li>
+        <li><a href="event.html" onclick="init()">Add Event</a></li>
+      </ul>
+    </div>
+  </nav>
+	<!-- <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Wellness Calendar</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="page.html">Break Activites</a></li>
+      </ul>
+    </div>
+  </div>
+</nav> -->
+  <div class="container">
+    <div class="calendar" id="animate">
+      <div class="month">
+        <i class="fas fa-angle-left prev"></i>
+        <div class="date">
+          <h1></h1>
+          <p></p>
+        </div>
+        <i class="fas fa-angle-right next"></i>
+      </div>
+      <div class="weekdays">
+        <div>Sun</div>
+        <div>Mon</div>
+        <div>Tue</div>
+        <div>Wed</div>
+        <div>Thu</div>
+        <div>Fri</div>
+        <div>Sat</div>
+      </div>
+      <div class="days"></div>
+    </div>
+
+    <div class="event" id="fadein">
+      <div class="title">
+        <h1 id = "curDate">Break Schedule</h1>
+      </div>
+      <div class="text-box">
+        <h3>Break #1</h3>
+        <p id="first">Looks like you aren't too busy :D ... enjoy your free time!!!!!</p>
+      </div>
+      <hr class="solid">
+      <div class="text-box">
+        <h3 id = "secondb">Break #2</h3>
+        <p id="second">Looks like you aren't too busy :D ... enjoy your free time!!!!!</p>
+      </div>
+      <hr class="solid">
+      <div class="text-box">
+        <h3 id = "thirdb">Break #3</h3>
+        <p id="third">Looks like you aren't too busy :D ... enjoy your free time!!!!!</p>
+      </div>
+      <hr class="solid">
+      <div class="text-box">
+        <h3 id = "fourthb">Break #4</h3>
+        <p id="fourth">Looks like you aren't too busy :D ... enjoy your free time!!!!!</p>
+      </div>
+      <hr class="solid">
+      <div class="text-box">
+        <h3 id = "fifthb">Break #5</h3>
+        <p id="fifth">Looks like you aren't too busy :D ... enjoy your free time!!!!!</p>
+      </div>
+    </div>
+
+	
+  </div>
+    <!-- Todo: (1) On click, ask questions regarding the event (2) display the event on the "fadein" div -->
+    <!-- Questions to ask: 
+          (1) Type of event
+          (2) If it's not a reminder, then add the time to a list (or something similar)
+     -->
+  
+ <script src="calendar.js"></script>
+</body>
+</html>
